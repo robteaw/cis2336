@@ -1,0 +1,25 @@
+a:hover {
+	color: #cc0000;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+#block1 {
+	height: 400px;
+	width: 200px;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: #308014;
+	float: left;
+	
+}
+
+#block2 {
+	height: 400px;
+	width: 200px;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: #308014;
+	float: right;
+	
+}

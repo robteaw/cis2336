@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link type="text/css" rel="stylesheet" href="email.css"/>
+</head>
+<body>
+<fieldset><legend></legend>
+
+<h1>Quadratic Equation</h1>
+<p>2x<sup>2</sup> + 4x - 4 = 0. Find X1 and X2.</p>
+
+	<script type="text/javascript">
+	function discriminant(a, b, c) {
+		var m = Math.pow(b, 2) - (4 * a * c);
+		return m;
+	}
+	
+	function unknownX1 (m, a, b) {
+		var x1 = (-b + Math.sqrt(m)) / (2*a);
+		return x1;
+	}
+	
+	function unknownX2 (m, a, b) {
+		var x2 = (-b - Math.sqrt(m)) / (2*a);
+		return x2;
+	}
+	var a = 2;
+	var b = 4;
+	var c = -4;
+	var m = discriminant(a, b, c);
+	var answer1 = unknownX1(m, a, b);
+	var answer2 = unknownX2(m, a, b);
+	document.write("Discriminant = " + m + "<br>"); 
+	document.write("X1 = " + answer1 + "<br>");
+	document.write("X2 = " + answer2);
+</script>
+	
+
+		</p>	
+		</fieldset>
+</body>
+</html>
